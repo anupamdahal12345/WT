@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons & Borders</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        color: #b3c6cc;
+    }
+    h1{
+        margin-left: 100px;
+        color: #4f5053;
+    }
+    table{
+        margin-left: 90px;
+        width: 75%;
+        text-align: center;
+    }
+    table td{
+        width: 50px;
+    }
+
+    button{
+        width: 140px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 19px;
+        border: none;
+    }
+
+    .plus-button{
+        width: 40px;
+        height: 40px;
+        background-color: #26be96;
+        color: white;
+        font-size: 25px;
+        border-radius: 50%;
+    }
+
+    /* COLUMNS */
+    .primary{
+        background-color: #26be96;
+        color: white;
+    }
+
+    .secondary{
+        background-color: #e5ebed;
+        color: #44717f;
+    }
+
+    .destructive{
+        background-color: #ee8363;
+        color: white;
+    }
+
+    .primary2td{
+        background-color: #26be96;
+    }
+
+    .primary2{
+        color: #26be96;
+        background-color: white;
+    }
+
+    /* ROWS */
+    .hover:hover{
+        border-bottom: 3px solid grey;
+    }
+
+    .press{
+        border-bottom: 3px solid grey;
+        opacity: 0.8;
+    }
+
+    .press:active{
+        opacity: 1;
+        transform: translateY(4px);
+    }
+
+    .disabled{
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    /* SECOND COLUMN */
+    .primary2s{
+        border-color: #26be96;
+        border-style: solid;
+        color: #26be96;
+    }
+
+    .secondary2{
+        border-color: grey;
+        border-style: solid;
+        background-color: white;
+        color: grey;
+    }
+
+    .destructive2{
+        border-color: #ee8363;
+        border-style: solid;
+        color: #ee8363;
+    }
+
+    .primary22{
+        border-color: white;
+        border-style: solid;
+        background-color: #26be96;
+    }
+    /* SECOND ROW */
+    .default2{
+        border-width: 1px;
+    }
+
+    .press2{
+        color: white;
+        border-width: 1px;
+        border-bottom: 3px solid grey;
+        opacity: 0.8;
+    }
+    .press2:active{
+        opacity: 1;
+        transform: translateY(4px);
+    }
+
+    .hover{
+        border-width: 2px;
+    }
+    .hover2:hover{
+        border-bottom: 3px solid grey;
+    }
+
+    .disabled2{
+        border-width: 1px;
+        opacity: 0.6;
+    }
+    
+    .primary22{
+        color: white;
+    }
+
+    .disabled2{
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    .table2{
+        color: black;
+    }
+
+    .table2 td{
+        color: black;
+        border: 1px;
+        border-color: black;
+    }
+</style>
+<body>
+    <h1 align="margin-left">Buttons</h1>
+    <table border="0" cellpadding="10" cellspacing="0" align="center">
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Primary</td>
+                <td>Secondary</td>
+                <td>Destructive</td>
+                <td>Primary</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Default</td>
+            <td><button class="plus-button default">+</button></td>
+            <td><button class="primary default">Button</button></td>
+            <td><button class="secondary default">Button</button></td>
+            <td><button class="destructive default">Button</button></td>
+            <td class="primary2td"><button class="primary2 default">Button</button></td>
+        </tr>
+        <tr>
+            <td>Hover</td>
+            <td><button class="plus-button hover">+</button></td>
+            <td><button class="primary hover">Button</button></td>
+            <td><button class="secondary hover">Button</button></td>
+            <td><button class="destructive hover">Button</button></td>
+            <td class="primary2td"><button class="primary2 hover">Button</button></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td><button class="plus-button press">+</button></td>
+            <td><button class="primary press">Button</button></td>
+            <td><button class="secondary press">Button</button></td>
+            <td><button class="destructive press">Button</button></td>
+            <td class="primary2td"><button class="primary2 press">Button</button></td>
+        </tr>
+        <tr>
+            <td>Disabled</td>
+            <td><button class="plus-button disabled">+</button></td>
+            <td><button class="primary disabled">Button</button></td>
+            <td><button class="secondary disabled">Button</button></td>
+            <td><button class="destructive disabled">Button</button></td>
+            <td class="primary2td"><button class="primary2 disabled">Button</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td style="color: white;">Primary</td>
+            <td style="color: white;">Secondary</td>
+            <td style="color: white;">Destructive</td>
+            <td class="primary22" style="border-color: #26be96;"><span style="opacity: .5;">Secondary</span></td>
+        </tr>
+        <!-- SECOND ROW -->
+        <tr>
+            <td>Default</td>
+            <td></td>
+            <td><button class="primary2s default2">Button</button></td>
+            <td><button class="secondary2 default2">Button</button></td>
+            <td><button class="destructive2 default2">Button</button></td>
+            <td class="primary2td"><button class="primary22 default2">Button</button></td>
+        </tr>
+        <tr>
+            <td>Hover</td>
+            <td></td>
+            <td><button class="primary2s hover2">Button</button></td>
+            <td><button class="secondary2 hover2">Button</button></td>
+            <td><button class="destructive2 hover2">Button</button></td>
+            <td class="primary2td"><button class="primary22 hover2">Button</button></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td></td>
+            <td><button class="primary2s press2" style="background-color:#26be96 ;">Button</button></td>
+            <td><button class="secondary2 press2" style="background-color: #e5ebed; color: #58808d;">Button</button></td>
+            <td><button class="destructive2 press2" style="background-color: #ee8363;">Button</button></td>
+            <td class="primary2td"><button class="primary22 press2" style="background-color: white; color: #26be96;">Button</button></td>
+        </tr>
+        <tr>
+            <td>Disabled</td>
+            <td></td>
+            <td><button class="primary2s disabled2">Button</button></td>
+            <td><button class="secondary2 disabled2">Button</button></td>
+            <td><button class="destructive2 disabled2">Button</button></td>
+            <td class="primary2td"><button class="primary22 disabled2">Button</button></td>
+        </tr>
+    </table>
+    <br>
+    <h1 align="margin-left">Borders</h1>
+    <table class="table2" border='0' cellpadding="0" cellspacing="22">
+        <tr>
+            <td style="border-style: dotted;">dotted</td>
+            <td style="border-style: dashed;">dashed</td>
+        </tr>
+        <tr>
+            <td><div style="border-style: solid;">solid</div></td>
+            <td><div style="border-style: double;">double</div></td>
+        </tr>
+        <tr>
+            <td><div style="border-style: groove;">groove</div></td>
+            <td><div style="border-style: ridge;">ridge</div></td>
+        </tr>
+        <tr>
+            <td><div style="border-style: inset;">inset</div></td>
+            <td><div style="border-style: outset;">outset</div></td>
+        </tr>
+        <tr>
+            <td style="border-style: none;">none</td>
+            <td style="border-style: hidden;">hidden</td>
+        </tr>
+    </table>
+</body>
+</html>
