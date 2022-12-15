@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Section</title>
+    <style>
+        body{
+            width: 1000px;
+        }
+        img{
+            position: absolute;
+            left: 30px;
+        }
+        h1{
+            position: relative;
+            left: 70px;
+        }
+        ul{
+            list-style-type: none;
+            position: relative;
+            left: 180px;
+            bottom: 70px;
+        }
+        li{
+            float: left;
+            margin: 25px;
+            color: #9699a5;
+        }
+        button{
+            background-color:#ffffff ;
+            border: none;
+            color: #afb3be;
+            position: relative;
+            bottom: 73px;
+            left: 1px;
+        }
+        input{
+            text-align:center;
+            height: 40px;
+            width:40%;
+            border: 1px solid #dde0e4;
+            border-radius: 5px;
+            position: relative;
+            left: 370px;
+            bottom: 55px;
+        }
+        a{
+            position: relative;
+            left:  750px;
+            bottom: 90px;
+        }
+        .profile{
+            position: relative;
+            left: 70px;
+            bottom: 5px;
+        }
+        .horizontal-line{
+            border-top: 3px solid #e1e1e3;
+            width: 135%;
+            position: relative;
+            bottom: 30px;
+
+        }
+        .click:active{
+            height: 53.5px;
+            border-bottom: 3px solid #7611f4;
+            font-weight: bold;
+            color: #3e4251;
+        }
+    </style>
+</head>
+<body>
+    <img src="./work.png" alt="image">
+    <h1>workflow</h1>
+    <div class="wrapper">
+        <ul>
+            <li class="click">Dashboard</li>
+            <li class="click">Team</li>
+            <li class="click">Projects</li>   
+            <li class="click">Calendar</li>   
+        </ul>
+        <form id="form" role="search">
+            <input type="search" id="query" name="q"
+             placeholder="Search">
+            <button><img src="./search.png" alt="image"></button>
+          </form>
+        <a href="#" class="notification">
+            <span><img src="./bell.png" alt="image"></span>
+        </a>
+        <a href="#">
+           <span class="profile"><img src="./bill.png" alt="image"></span>
+        </a>
+        <div class="horizontal-line"></div>
+    </div>
+    
+</body>
+</html>
