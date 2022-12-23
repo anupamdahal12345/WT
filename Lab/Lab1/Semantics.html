@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(th.jpg) no-repeat; 
+            background-size: cover;
+            height: 100vh;
+
+            background-color: rosybrown;
+        }
+        .inputt{
+            margin: 20px;
+        }
+        input{
+            
+            background-color: bisque;
+            margin: 10px;
+            padding: 15px 15px 15px 15px;
+            color: rebeccapurple;
+            font-size: 18px;
+        }
+        input:hover{
+            cursor: pointer;
+            background-color: #374151;
+            color: white;
+        }
+        h1{
+            padding-top: 40px;
+            color: orange;
+        }
+        .navv ul{
+            display: flex;
+            font-size: 24px;
+        }
+        .navv ul li{
+            margin-top: -30px;
+            margin-left: 48px;
+            list-style: none; 
+        }
+       .navv ul li a{
+            text-decoration: none;
+            color: #374151;
+        }
+        .navv ul li a:hover{
+            color: white;
+            background-color: #374151;
+            border-radius: 4px;
+            padding: 4px;
+            opacity: 0.6;
+        }
+        .navv{
+            margin-left:350px;
+            margin-right: 200px;   
+        }
+        aside{
+            background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+            float: right;
+        }
+        video{
+            height: 300px;
+            width: 500px;
+            margin-left: 50px;
+        }
+        audio{
+            margin-left: 50px;
+        }
+        h2{
+            color: white;
+            margin-left: 30px;
+        }
+        p{
+            
+            padding:40px;
+            font-size: 30px;
+            color:thistle;
+            background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        }
+        .und{
+            text-align: justify;
+            text-transform: uppercase;
+        }
+        .bold{
+            text-align: right;
+            text-indent: 700px;
+        }
+        .italic{
+            word-spacing: 50px;
+        }
+        .sup{
+            letter-spacing: 30px;
+        }
+        .strike{
+            text-decoration: rgb(108, 33, 206);
+        }
+        
+    </style>
+</head>
+<body>
+        <header><h1>SEMANTICS TAGS.</h1>
+            <nav>
+            <ul>
+                <div class="navv">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </ul>
+            </nav>
+        </header>
+            <aside>
+                <h1 class="inputt">Login To Request Help</h1>
+                <input type="email" name="email" placeholder="Enter your email address.">
+            </aside>
+            <section>
+                <h2>This is video.</h2>
+                <video src="./video.mp4" controls>
+                </video>
+                <br>
+                <h2>This is audio.</h2>
+                <audio src="./Starboy.mp3" controls>
+                </audio>
+            </section>
+            <h1>Text formatting tags.</h1>
+            <p class="und">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</p><br>
+            <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</p><br>
+            <p class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</p><br>
+            <p class="sup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</p><br>
+            <p class="sub"><i><u>ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</u></i></p><br>
+            <p class="strike">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolorum aliquid tempora ullam reiciendis doloremque ad dolorem sequi aperiam facilis similique veniam minus, numquam, ratione possimus debitis? Obcaecati, aspernatur cum?</p><br>
+</body>
+</html>
