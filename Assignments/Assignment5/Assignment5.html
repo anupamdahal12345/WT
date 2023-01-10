@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        
+            
+        h1{
+            width: fit-content;
+            margin: auto;
+            position: relative;
+            top: 50px;
+            color: black;
+        }
+        input{
+           position: relative;
+           bottom: 60px;
+           padding: 20px 30px;
+           border: 1px solid bisque;
+        }
+        .row1,.row2,.row3,.row4,.row5{
+            position: relative;
+            top: 60px;
+        }
+        .row2{ 
+            top: 65px;
+        }
+        .row3{
+            top:70px;
+        }
+        .row4{
+            top: 75px;
+        }
+        .row5{
+            top: 80px;
+        }
+        button{
+            padding: 30px;
+            margin: 2px;
+            position: relative;
+            bottom: 90px;
+            border-radius: 10px;
+            cursor: pointer;
+            bottom: 90px;
+            border:1px solid  ;
+            background-color: lightslategray ;
+        }
+        .btn-1{
+            padding-left: 45px;
+            padding-right: 40px;
+        }
+        .btn-17{
+            padding-left: 17px;
+        }
+        .wrapper{
+            border: 1px solid grey;
+            display:inline-block;
+            margin-left: 440px;
+            padding-left: 40px;
+            padding-bottom: 23px;
+            padding-right: 23px;
+            padding-top: 80px;
+            position: relative;
+            left: 128px;
+            top: 70px;
+            max-width: 500px;
+            background-color: grey;
+        }
+    </style>
+
+</head>
+<body> 
+    <div class="wrapper">
+        <input type="text">
+        <div class="row1">
+            <button class="btn-1">AC</button>
+            <button class="btn-2">%</button>
+            <button class="btn-3">/</button>
+        </div>
+        <div class="row2">
+            <button class="btn-4">7</button>
+            <button class="btn-5">8</button>
+            <button class="btn-6">9</button>
+            <button class="btn-7">*</button>
+        </div>  
+        <div class="row3"> 
+            <button class="btn-8">4</button>
+            <button class="btn-9">5</button>
+            <button class="btn-10">6</button>
+            <button class="btn-11">-</button>
+        </div>    
+        <div class="row4">
+            <button class="btn-12">1</button>
+            <button class="btn-13">2</button>
+            <button class="btn-14">3</button>
+            <button class="btn-15">+</button>
+        </div>
+        <div class="row5">
+            <button class="btn-16">0</button>
+            <button class="btn-17">00</button>
+            <button class="btn-18">.</button>
+            <button class="btn-19">=</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
